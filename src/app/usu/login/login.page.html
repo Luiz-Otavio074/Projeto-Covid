@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position = "floating">E-mail</ion-label>
+      <ion-input name="login" type="text" [(ngModel)]="email"></ion-input>  
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input name="login" type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="secondary" type="submit" (click)="loginUsuario()">
+          Logar<ion-icon slot="end" name="save-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Autor</ion-card-subtitle>
+      <ion-card-title>Luiz Otávio Santos Lomeu</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Este app utiliza uma API para trazer as informações mais
+        recentes sobre o corona-vírus pelo mundo.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      Não está registrado? Clique no botão abaixo para se registrar!
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row>
+    <ion-col>
+      <ion-button color="secondary" type="submit" (click)="navega()">
+        Regitrar
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
